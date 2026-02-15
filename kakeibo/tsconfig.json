@@ -1,0 +1,11 @@
+{
+  "files": [],
+  "references": [
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.node.json" }
+  ],
+  "compilerOptions": {
+    "verbatimModuleSyntax": true, // import type を尊重して不要な import を出さない
+    "isolatedModules": true // ESM との相性アップ（型の取り扱いが明確に）
+  }
+}
