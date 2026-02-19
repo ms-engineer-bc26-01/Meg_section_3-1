@@ -1,0 +1,12 @@
+services:
+  web:
+    build: .
+    ports:
+      - "5173:5173"
+    environment:
+      # Docker 上でのファイル監視に必要
+      - CHOKIDAR_USEPOLLING=1
+    volumes:
+      - .:/app
+      - /app/node_modules
+    # 必要ならネットワーク設定や UID/GID の調整を追加
