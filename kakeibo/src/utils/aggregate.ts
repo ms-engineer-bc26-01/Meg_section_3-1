@@ -18,4 +18,3 @@ export const calcMonthly = (txs: Transaction[]) => {
     .reduce((s, t) => s + t.amount, 0);
   return { income, expense, diff: income - expense };
 };
-``;
